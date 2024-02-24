@@ -1,9 +1,13 @@
+.home__container {
+}
+
 .home__content {
   display: grid;
   grid-template-columns: 116px repeat(2, 1fr);
   padding-top: 5.5rem;
   column-gap: 2rem;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 .home__social {
@@ -77,4 +81,22 @@
   100% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
+}
+
+.home__scroll-button {
+  margin-left: 9.25rem;
+  font-size: 1.25rem;
+  color: var(--title-color);
+}
+
+.home__scroll-name {
+  color: var(--title-color);
+  font-size: 1rem;
+  font-weight: var(--font-medium);
+  margin-right: var(--mb-0-25);
+  margin-left: 2px;
+}
+
+.home__scroll-arrow {
+  font-size: 1.25rem;
 }
