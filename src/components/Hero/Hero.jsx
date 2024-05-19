@@ -29,7 +29,7 @@ export default function Hero() {
       />
       <div className={styles.info}>
         <h1>Muhammad Ibrahim</h1>
-        <h2>Frontend Developer</h2>
+        <h2>Fullstack Developer</h2>
         <span>
           <a href="">
             <img src={twitterIcon} alt="" />
