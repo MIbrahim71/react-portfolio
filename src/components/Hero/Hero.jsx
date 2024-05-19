@@ -1,5 +1,5 @@
 import React from "react";
-import "./Hero.module.css";
+import styles from "./Hero.module.css";
 import heroImg from "../../assets/Design uten navn.png";
 import sun from "../../assets/sun.svg";
 import moon from "../../assets/moon.svg";
@@ -13,37 +13,34 @@ import CV from "../../assets/cv.pdf";
 import { useTheme } from "../../common/ThemeContext";
 
 export default function Hero() {
-  const [theme, toggleTheme] = useTheme();
+  const { theme, toggleTheme } = useTheme;
 
+  const themeIcon = theme === "light" ? sun : moon;
   const twitterIcon = theme === "light" ? twitterLight : twitterDark;
   const githubIcon = theme === "light" ? githubLight : githubDark;
   const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
 
   return (
-    <section>
-      <div>
-        <h1>
-          Muhammad <br /> Ibrahim
-        </h1>
+    <section className={styles.container}>
+      <img src={themeIcon} alt="themeIcon" />
+      <div className={styles.info}>
+        <h1>Muhammad Ibrahim</h1>
         <h2>Frontend Developer</h2>
         <span>
           <a href="">
             <img src={twitterIcon} alt="" />
           </a>
           <a href="">
-            <img src="" alt="" />
+            <img src={githubIcon} alt="" />
           </a>
           <a href="">
-            <img src="" alt="" />
+            <img src={linkedinIcon} alt="" />
           </a>
         </span>
         <p>Developer interested in UI and cloud</p>
-        <a href="">
-          <button onClick={toggleTheme}>Resume</button>
+        <a href={CV}>
+          <button>Resume</button>
         </a>
-      </div>
-      <div>
-        <img src="" alt="" />
       </div>
     </section>
   );
