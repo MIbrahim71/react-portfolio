@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Hero.module.css";
-import heroImg from "../../assets/Design uten navn.png";
 import sun from "../../assets/sun.svg";
 import moon from "../../assets/moon.svg";
 import twitterLight from "../../assets/twitter-light.svg";
@@ -22,7 +21,12 @@ export default function Hero() {
 
   return (
     <section className={styles.container}>
-      <img src={themeIcon} alt="themeIcon" />
+      <img
+        src={themeIcon}
+        alt="themeIcon"
+        className={styles.themeImg}
+        onClick={toggleTheme}
+      />
       <div className={styles.info}>
         <h1>Muhammad Ibrahim</h1>
         <h2>Frontend Developer</h2>
@@ -38,7 +42,7 @@ export default function Hero() {
           </a>
         </span>
         <p>Developer interested in UI and cloud</p>
-        <a href={CV}>
+        <a href={CV} target="_blank">
           <button>Resume</button>
         </a>
       </div>
