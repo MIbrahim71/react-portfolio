@@ -12,7 +12,7 @@ import CV from "../../assets/cv.pdf";
 import { useTheme } from "../../common/ThemeContext";
 
 export default function Hero() {
-  const { theme, toggleTheme } = useTheme;
+  const { theme, toggleTheme } = useTheme();
 
   const themeIcon = theme === "light" ? sun : moon;
   const twitterIcon = theme === "light" ? twitterLight : twitterDark;

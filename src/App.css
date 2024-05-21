@@ -74,35 +74,35 @@ p {
   cursor: pointer;
 }
 
-@media (width >= 800px) {
+@media screen and (min-width: 800px) {
   #root {
     gap: 100px;
   }
   h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
   h2,
   h3 {
-    font-size: 24px;
+    font-size: 34px;
   }
   p {
-    font-size: 20px;
+    font-size: 28px;
   }
 
   .sectionTitle {
     margin-bottom: 60px;
   }
+}
 
-  @media (width >= 1400px) {
-    #root {
-      gap: 200px;
-    }
-    h1 {
-      font-size: 48px;
-    }
+@media screen and (min-width: 1400px) {
+  #root {
+    gap: 200px;
+  }
+  h1 {
+    font-size: 50px;
+  }
 
-    .sectionTitle {
-      margin-bottom: 75px;
-    }
+  .sectionTitle {
+    margin-bottom: 75px;
   }
 }
