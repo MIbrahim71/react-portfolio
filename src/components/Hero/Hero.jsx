@@ -2,8 +2,8 @@ import React from "react";
 import styles from "./Hero.module.css";
 import sun from "../../assets/sun.svg";
 import moon from "../../assets/moon.svg";
-import twitterLight from "../../assets/twitter-light.svg";
-import twitterDark from "../../assets/twitter-dark.svg";
+import instagramDark from "../../assets/instagram-dark.svg";
+import instagramLight from "../../assets/instagram-light.svg";
 import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
@@ -15,7 +15,7 @@ export default function Hero() {
   const { theme, toggleTheme } = useTheme();
 
   const themeIcon = theme === "light" ? sun : moon;
-  const twitterIcon = theme === "light" ? twitterLight : twitterDark;
+  const instagramIcon = theme === "light" ? instagramLight : instagramDark;
   const githubIcon = theme === "light" ? githubLight : githubDark;
   const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
 
@@ -31,14 +31,19 @@ export default function Hero() {
         <h1>Muhammad Ibrahim</h1>
         <h2>Fullstack Developer</h2>
         <span>
-          <a href="">
-            <img src={twitterIcon} alt="" />
+          <a href="https://www.instagram.com/ibrcodes/">
+            <img
+              src={instagramIcon}
+              alt="Instagram Icon"
+              target="_blank"
+              className={styles.igIcon}
+            />
           </a>
-          <a href="">
-            <img src={githubIcon} alt="" />
+          <a href="https://github.com/MIbrahim71" target="_blank">
+            <img src={githubIcon} alt="Github Icon" />
           </a>
-          <a href="">
-            <img src={linkedinIcon} alt="" />
+          <a href="www.linkedin.com/in/muhammad-i">
+            <img src={linkedinIcon} alt="LinkedIn Icon" target="_blank" />
           </a>
         </span>
         <p>Developer interested in UI and cloud</p>
