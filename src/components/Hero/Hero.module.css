@@ -24,6 +24,11 @@
   gap: 20px;
 }
 
+a {
+  width: fit-content;
+  align-self: center;
+}
+
 span {
   display: flex;
   justify-content: center;
@@ -37,5 +42,49 @@ button {
   border: none;
   border-radius: 8px;
   font-size: 20px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
   cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.scroll {
+  text-decoration: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  text-align: center;
+  bottom: 5%;
+  font-size: 50px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 800px) {
+  .container {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .hero {
+    max-width: 350px;
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .hero {
+    max-width: 400px;
+    width: 400px;
+  }
 }

@@ -46,6 +46,9 @@ export default function Hero() {
           <button>Resume</button>
         </a>
       </div>
+      <a href="" className={styles.scroll}>
+        ⬇️
+      </a>
     </section>
   );
 }
