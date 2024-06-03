@@ -76,7 +76,7 @@ p {
 
 @media screen and (min-width: 800px) {
   #root {
-    gap: 100px;
+    gap: 0px;
   }
   h1 {
     font-size: 40px;
