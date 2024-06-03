@@ -46,14 +46,14 @@ export default function Hero() {
             <img src={linkedinIcon} alt="LinkedIn Icon" target="_blank" />
           </a>
         </span>
-        <p>Developer interested in UI and cloud</p>
-        <a href={CV} target="_blank">
+        {/* <p>Developer interested in UI and cloud</p> */}
+        <a href="https://flowcv.com/resume/lpua8c8cdd" target="_blank">
           <button>Resume</button>
         </a>
       </div>
-      <a href="" className={styles.scroll}>
+      {/* <a href="" className={styles.scroll}>
         ⬇️
-      </a>
+      </a> */}
     </section>
   );
 }

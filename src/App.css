@@ -22,13 +22,13 @@ body {
   background-color: var(--background-color);
   display: flex;
   justify-content: center;
-  margin: 0 auto 60px;
+  margin: 0 auto;
 }
 
 #root {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 40px;
 }
 
 h1,
@@ -79,11 +79,11 @@ p {
     gap: 100px;
   }
   h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
   h2,
   h3 {
-    font-size: 30px;
+    font-size: 24px;
   }
   p {
     font-size: 20px;
