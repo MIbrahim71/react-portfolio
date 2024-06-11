@@ -34,7 +34,8 @@ body {
 h1,
 h2,
 h3,
-p {
+p,
+span {
   color: var(--text-color);
   margin: 0;
   padding: 0;
@@ -42,7 +43,8 @@ p {
 
 h2,
 h3,
-p {
+p,
+span {
   font-family: "Roboto Mono", monospace;
 }
 
@@ -96,7 +98,7 @@ p {
 
 @media screen and (min-width: 1400px) {
   #root {
-    gap: 200px;
+    gap: 0px;
   }
   h1 {
     font-size: 50px;

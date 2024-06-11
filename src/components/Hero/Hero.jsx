@@ -42,7 +42,7 @@ export default function Hero() {
           <a href="https://github.com/MIbrahim71" target="_blank">
             <img src={githubIcon} alt="Github Icon" />
           </a>
-          <a href="www.linkedin.com/in/muhammad-i">
+          <a href="https://www.linkedin.com/in/muhammad-i/">
             <img src={linkedinIcon} alt="LinkedIn Icon" target="_blank" />
           </a>
         </span>
