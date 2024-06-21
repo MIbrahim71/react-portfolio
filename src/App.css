@@ -6,10 +6,19 @@
   --text-color: #222;
   --form-text-color: #555;
   --footer-text-color: #888;
+
+  font-family: Inter, sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
 }
 
 [data-theme="dark"] {
-  --background-color: #222;
+  --background-color: #131313;
   --btn-color: #fff;
   --btn-text-color: #222;
   --project-card-bg: #fff;
@@ -41,16 +50,15 @@ span {
   padding: 0;
 }
 
-h2,
+/* h2,
 h3,
 p,
 span {
   font-family: "Roboto Mono", monospace;
-}
+} */
 
-h1,
 h2 {
-  text-transform: uppercase;
+  font-weight: 400;
 }
 
 h2,
@@ -59,8 +67,10 @@ h3 {
 }
 
 h1 {
-  font-family: "Rubik", sans-serif;
-  font-size: 32px;
+  /* font-family: "Rubik", sans-serif; */
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 26px;
 }
 
 p {

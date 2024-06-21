@@ -8,7 +8,6 @@ import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
-import CV from "../../assets/cv.pdf";
 import { useTheme } from "../../common/ThemeContext";
 
 export default function Hero() {
@@ -31,25 +30,24 @@ export default function Hero() {
         <h1>Muhammad Ibrahim</h1>
         <h2>Fullstack Developer</h2>
         <span>
-          <a href="https://www.instagram.com/ibrcodes/">
+          <a href="https://www.instagram.com/ibrcodes/" target="_blank">
             <img
               src={instagramIcon}
               alt="Instagram Icon"
-              target="_blank"
               className={styles.igIcon}
             />
           </a>
           <a href="https://github.com/MIbrahim71" target="_blank">
             <img src={githubIcon} alt="Github Icon" />
           </a>
-          <a href="https://www.linkedin.com/in/muhammad-i/">
-            <img src={linkedinIcon} alt="LinkedIn Icon" target="_blank" />
+          <a href="https://www.linkedin.com/in/muhammad-i/" target="_blank">
+            <img src={linkedinIcon} alt="LinkedIn Icon" />
           </a>
         </span>
         {/* <p>Developer interested in UI and cloud</p> */}
-        <a href="https://flowcv.com/resume/lpua8c8cdd" target="_blank">
+        {/* <a href="https://flowcv.com/resume/lpua8c8cdd" target="_blank">
           <button>Resume</button>
-        </a>
+        </a> */}
       </div>
       {/* <a href="" className={styles.scroll}>
         ⬇️
