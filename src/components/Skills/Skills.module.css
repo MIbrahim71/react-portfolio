@@ -4,7 +4,7 @@
   justify-content: center;
   gap: 30px;
   text-align: center;
-  padding: 30px 30px;
+  padding: 60px 30px;
 }
 
 .skillsContainer {
@@ -28,4 +28,7 @@
 }
 
 @media screen and (max-width: 768px) {
+  .section {
+    padding: 30px;
+  }
 }
