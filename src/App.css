@@ -2,7 +2,7 @@
   --background-color: #fff;
   --btn-color: #0987f2;
   --btn-text-color: #fff;
-  --project-card-bg: #ffffff00;
+  --project-card-bg: #232323;
   --text-color: #222;
   --form-text-color: #555;
   --footer-text-color: #888;
@@ -21,7 +21,7 @@
   --background-color: #131313;
   --btn-color: #fff;
   --btn-text-color: #222;
-  --project-card-bg: #fff;
+  --project-card-bg: #232323;
   --text-color: #fff;
   --form-text-color: #fff;
   --footer-text-color: #bbb;
@@ -37,7 +37,9 @@ body {
 #root {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 40px;
+  width: 500px;
 }
 
 h1,
@@ -50,15 +52,8 @@ span {
   padding: 0;
 }
 
-/* h2,
-h3,
-p,
-span {
-  font-family: "Roboto Mono", monospace;
-} */
-
 h2 {
-  font-weight: 400;
+  font-weight: 300;
 }
 
 h2,
@@ -69,12 +64,12 @@ h3 {
 h1 {
   /* font-family: "Rubik", sans-serif; */
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 26px;
 }
 
 p {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 300;
 }
 
@@ -95,26 +90,10 @@ p {
   }
   h2,
   h3 {
-    font-size: 24px;
-  }
-  p {
     font-size: 20px;
   }
 
-  .sectionTitle {
-    margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  #root {
-    gap: 0px;
-  }
-  h1 {
-    font-size: 50px;
-  }
-
-  .sectionTitle {
-    margin-bottom: 75px;
+  p {
+    font-size: 12px;
   }
 }
