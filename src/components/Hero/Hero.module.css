@@ -9,14 +9,13 @@
   cursor: pointer;
 }
 
-.container {
+.section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
   text-align: center;
   height: 100dvh;
-  min-height: 500px;
 }
 
 .info {
@@ -36,13 +35,13 @@ span {
 }
 
 .igIcon {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
 }
 
 img {
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
 }
 
 button {
@@ -73,14 +72,14 @@ button:active {
   transform: translate(-50%, -50%);
   margin: 0 auto;
   text-align: center;
-  bottom: 5%;
+  bottom: 0%;
   font-size: 50px;
 }
 
 /* Media Queries */
 
 @media screen and (min-width: 736px) {
-  .container {
+  .section {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-evenly;
@@ -92,19 +91,12 @@ button:active {
   }
 
   .igIcon {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
   }
 
   img {
-    width: 36px;
-    height: 36px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .hero {
-    max-width: 400px;
-    width: 400px;
+    width: 32px;
+    height: 32px;
   }
 }

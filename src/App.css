@@ -39,7 +39,7 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 40px;
-  width: 500px;
+  width: 600px;
 }
 
 h1,
@@ -52,8 +52,10 @@ span {
   padding: 0;
 }
 
-h2 {
-  font-weight: 300;
+h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 26px;
 }
 
 h2,
@@ -61,20 +63,13 @@ h3 {
   font-size: 20px;
 }
 
-h1 {
-  /* font-family: "Rubik", sans-serif; */
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 26px;
+h2 {
+  font-weight: 300;
 }
 
 p {
   font-size: 12px;
   font-weight: 300;
-}
-
-.sectionTitle {
-  margin-bottom: 30px;
 }
 
 .hover {

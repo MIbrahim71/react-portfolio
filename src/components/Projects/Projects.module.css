@@ -1,20 +1,14 @@
-.project {
+.section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
-}
-
-.project h1 {
-  text-align: center;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   gap: 10px;
-  margin-top: 20px;
+  padding-top: 30px;
+}
+
+.section h1 {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 a {
@@ -41,9 +35,14 @@ a {
 .projectInfo {
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
   align-items: baseline;
   margin-bottom: 5px;
   gap: 10px;
+}
+
+.projectInfo h2 {
+  flex: 1;
 }
 
 .projectLinks a {
@@ -63,12 +62,13 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  .container {
+  .section {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 15px;
+    gap: 10px;
     padding: 0 30px;
+    padding-top: 30px;
   }
 
   .projectCard {
