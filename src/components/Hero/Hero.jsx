@@ -11,6 +11,7 @@ import linkedinDark from "../../assets/linkedin-dark.svg";
 import { useTheme } from "../../common/ThemeContext";
 
 import SmoothScroll from "smooth-scroll";
+import Navbar from "../Navbar/Navbar";
 
 export default function Hero() {
   const { theme, toggleTheme } = useTheme();
@@ -19,8 +20,6 @@ export default function Hero() {
   const instagramIcon = theme === "light" ? instagramLight : instagramDark;
   const githubIcon = theme === "light" ? githubLight : githubDark;
   const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
-
-  useEffect(() => {}, []);
 
   const [showAnchor, setShowAnchor] = useState(true);
 
@@ -47,12 +46,7 @@ export default function Hero() {
 
   return (
     <section className={styles.section}>
-      <img
-        src={themeIcon}
-        alt="themeIcon"
-        className={styles.themeImg}
-        onClick={toggleTheme}
-      />
+      <Navbar />
       <div className={styles.info}>
         <h1>Muhammad Ibrahim</h1>
         <h2>Fullstack Developer</h2>
