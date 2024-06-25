@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Skill() {
   return (
-    <div className={styles.section}>
+    <div id="skills" className={styles.section}>
       <h1>Skills</h1>
       <div className={styles.skillsContainer}>
         {skills.map((skill, index) => (

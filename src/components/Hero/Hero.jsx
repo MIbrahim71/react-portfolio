@@ -46,7 +46,6 @@ export default function Hero() {
 
   return (
     <section className={styles.section}>
-      <Navbar />
       <div className={styles.info}>
         <h1>Muhammad Ibrahim</h1>
         <h2>Fullstack Developer</h2>

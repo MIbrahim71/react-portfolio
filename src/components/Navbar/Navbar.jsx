@@ -9,15 +9,15 @@ export default function Navbar() {
     const handleMouseMove = () => {
       setMouseMoved(true);
 
-      // if (timer) {
-      //   clearTimeout(timer);
-      // }
+      if (timer) {
+        clearTimeout(timer);
+      }
 
-      // const newTimer = setTimeout(() => {
-      //   setMouseMoved(false);
-      // }, 2000);
+      const newTimer = setTimeout(() => {
+        setMouseMoved(false);
+      }, 2000);
 
-      // setTimer(newTimer);
+      setTimer(newTimer);
     };
 
     window.addEventListener("mousemove", handleMouseMove);
@@ -25,23 +25,30 @@ export default function Navbar() {
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
 
-      // if (timer) {
-      //   clearTimeout(timer);
-      // }
+      if (timer) {
+        clearTimeout(timer);
+      }
     };
-  }, []);
+  }, [timer]);
 
   return (
     <>
       {mouseMoved && (
-        <nav className={styles.nav}>
-          <ul>
-            <li>Projects</li>
-            <li>Skills</li>
-            <li>Contact</li>
-            <li>CV</li>
-          </ul>
-        </nav>
+        <div className={styles.container}>
+          <nav className={styles.nav}>
+            <ul>
+              <a href="#projects">
+                <li>Projects</li>
+              </a>
+              <a href="#skills">
+                <li>Skills</li>
+              </a>
+              <a href="#contact">
+                <li>Contact</li>
+              </a>
+            </ul>
+          </nav>
+        </div>
       )}
     </>
   );
