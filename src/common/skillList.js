@@ -6,4 +6,5 @@ export const skills = [
   "HTML",
   "CSS",
   "Git",
+  "Redux",
 ];

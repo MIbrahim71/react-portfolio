@@ -48,6 +48,7 @@ export default function Projects() {
         <div className={styles.projectStack}>
           <p>React</p>
           <p>Tailwind</p>
+          <p>CSS</p>
         </div>
       </div>
 
@@ -94,6 +95,7 @@ export default function Projects() {
         <div className={styles.projectStack}>
           <p>React</p>
           <p>Tailwind</p>
+          <p>CSS</p>
         </div>
       </div>
 

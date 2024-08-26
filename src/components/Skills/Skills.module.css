@@ -3,13 +3,13 @@
   flex-direction: column;
   justify-content: center;
   gap: 30px;
-  text-align: center;
+  text-align: left;
   padding: 60px 30px;
 }
 
 .skillsContainer {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
   gap: 8px;
 }
